@@ -1,0 +1,54 @@
+using System;
+using System.Linq;
+using System.Collections.Generic;
+using System.Text;
+using System.Data;
+using System.Data.SqlClient;
+using System.Data.SqlServerCe;
+using System.IO;
+using SmartDeviceProject1.DBClasses;
+
+
+namespace SmartDeviceProject1
+{
+    public class DAL
+    {
+        public  String connString = "Data Source=116.202.214.159;Initial Catalog=AFC1010;Persist Security Info=False;User ID=user_tm3;Password=qazwsx@1;";
+        public List<User> CheckDbConnection()
+        {
+            String SQL = "select * from [ax].HHTUSERSETUP";
+
+
+            SqlConnection conn = new SqlConnection(connString);
+            try
+            {
+                conn.Open();
+                SqlCommand cmd = new SqlCommand(SQL, conn);
+                SqlDataAdapter da = new SqlDataAdapter(cmd);
+                // this will query your database and return the result to your datatable
+                DataTable dataTable = new DataTable();
+                da.Fill(dataTable);
+                conn.Close();
+                da.Dispose();
+                List<User> data = new List<User>();
+                foreach (DataRow row in dataTable.Rows)
+                {
+                    var obj = new User()
+                    {
+                       
+                        USERID = Convert.ToString(row["USERID"]),
+                        PASSWORD = Convert.ToString(row["PASSWORD"])
+
+
+                    };
+                    data.Add(obj);
+                }
+                return data;
+            }
+            catch (Exception ex)
+            {
+                return null;
+            }
+        }
+     }
+}

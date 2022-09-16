@@ -1,0 +1,26 @@
+{
+  "id": "8ac56f76-6ece-43c3-853c-bba037844346",
+  "name": "BAI2FileProject",
+  "publisher": "Default publisher",
+  "version": "1.0.0.5",
+  "brief": "",
+  "description": "",
+  "privacyStatement": "",
+  "EULA": "",
+  "help": "",
+  "url": "",
+  "logo": "",
+  "dependencies": [],
+  "screenshots": [],
+  "platform": "1.0.0.0",
+  "application": "18.0.0.0",
+  "idRanges": [
+    {
+      "from": 50100,
+      "to": 50149
+    }
+  ],
+  "contextSensitiveHelpUrl": "https://BAI2FileProject.com/help/",
+  "showMyCode": true,
+  "runtime": "7.0"
+}

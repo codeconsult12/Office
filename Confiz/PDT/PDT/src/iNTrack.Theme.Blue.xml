@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Resco.UIElements>
+  <Theme Type="Themes.UITheme" DPI="96,96" ScaleBorders="0">
+   
+    <Defines>
+        <Color Name="FormColor" Value="#FFF0F0F0"/>
+        <Color Name="BorderColor" Value="#FF184C7E"/>
+        <Color Name="FocusedBorderColor" Value="#FF184C7E"/>
+        <Color Name="ControlText" Value="#FF303030"/>
+        <Color Name="GrayText" Value="#FF7FB4DC" />
+        <Gradient Name="ButtonBkgnd" StartColor="#FF689DC5" EndColor="#FF376B9A"/>
+        <Gradient Name="ButtonPressedBkgnd" StartColor="#FF376B9A" EndColor="#FF689DC5"/>
+        <Gradient Name="ListSelection" StartColor="#FFD8D8D8" EndColor="#FF848484"/>
+        <Gradient Name="FocusedListSelection" StartColor="#FF94A2E7" EndColor="#FF4A599C"/>
+        <Gradient Name="PressedButtonBar" StartColor="#FF376B9A" EndColor="#FF689DC5"/>
+        <Gradient Name="ProgressFill" StartColor="#FF018B32" EndColor="#FFB8E4A1" FillDirection="Horizontal" />
+        <Brush Name="FocusedBackground" BorderColor="FocusedBorderColor" BorderThickness="2"/>
+
+      <Element Name="DefaultControl" Padding="2" TextAlignment="MiddleCenter" RoundedCornerRadius="4">
+        <Brush Name="NormalBackground"  BackColor="#FFFFFFFF" Gradient="ButtonBkgnd" BorderColor="BorderColor" BorderThickness="1"/>
+        <Brush Name="PressedBackground" BackColor="#FFFFFFFF" Gradient="ButtonPressedBkgnd" BorderColor="FocusedBorderColor" BorderThickness="2"/>
+        <Brush Name="FocusedBackground" BorderColor="FocusedBorderColor" BorderThickness="2"/>
+        <Text Name="NormalText" ForeColor="#FFFFFFFF" />
+        <Text Name="DisabledText" ForeColor="GrayText" />
+      </Element>
+
+      <Element Name="DefaultListView" Padding="0" RoundedCornerRadius="0">
+        <Brush Name="NormalBackground" BackColor="#FFFFFFFF" BorderColor="BorderColor" BorderThickness="1" />
+        <Text Name="DisabledText" ForeColor="GrayText" />
+        <Element Name="DataTemplate" Padding="4" NormalText="ControlText" DisabledText="GrayText"/>
+        <Element Name="SelectedDataTemplate" Padding="4" NormalBackground="ListSelection" FocusedBackground="FocusedListSelection" NormalText="#FFFFFFFF" DisabledText="#FFA0A0A0" />
+      </Element>
+  
+      <Element Name="DefaultOptionRow" Padding="5,0" TextAlignment="MiddleLeft" RoundedCornerRadius="8" DisabledText="GrayText">
+        <Brush Name="NormalBackground" BackColor="#FFE0E0E0" BorderColor="BorderColor" BorderThickness="1" />
+        <Property Name="LabelText" Type="Themes.UITextStyle">
+          <Text Name="LabelText" ForeColor="#FF909090" Font="Tahoma,9,Regular" />
+        </Property>
+      </Element>
+   
+    </Defines>
+  
+    <Element Name="UIPanel" DefaultWidth="200" DefaultHeight="200">
+        <Text Name="NormalText" ForeColor="ControlText" Font="Tahoma,10,Regular" />
+        <Text Name="DisabledText" ForeColor="GrayText" />
+    </Element>
+    
+    <!-- Common Controls-->  
+    <Element Name="UIButton" UseDefine="DefaultControl" />
+    <Element Name="UISpinButton" UseDefine="DefaultControl" />
+    <Element Name="UIComboBox" UseDefine="DefaultControl" Padding="3,0,0,0" TextAlignment="MiddleLeft" >
+      <Element Name="ListView" Padding="0" RoundedCornerRadius="0">
+        <Brush Name="NormalBackground" BackColor="#FFFFFFFF" BorderColor="BorderColor" BorderThickness="1" />
+        <Text Name="DisabledText" ForeColor="GrayText" />
+        <Element Name="DataTemplate" Padding="4" NormalText="ControlText" DisabledText="GrayText"/>
+        <Element Name="SelectedDataTemplate" Padding="4" NormalBackground="ListSelection" FocusedBackground="FocusedListSelection" NormalText="#FFFFFFFF" DisabledText="#FFA0A0A0" />
+        <Element Name="AlternateDataTemplate" Padding="4" NormalBackground="#00FFFFFF"/>
+        <Property Name="RowLineThickness" Int="0"/>
+      </Element>
+    </Element>  
+    <Element Name="UIBaseComboBox+UIArrowElement" PressedBackground="ButtonPressedBkgnd">
+      <Property Name="TriangleColor" Assembly="System.Drawing" Type="System.Drawing.Color" Value="#FFFFFFFF" />
+    </Element>
+
+    <Element Name="UIRollerPicker" UseDefine="DefaultControl" Padding="3,0,0,0" TextAlignment="MiddleLeft" />
+    <Element Name="UIColorPicker" UseDefine="DefaultControl" Padding="3,2,0,2" TextAlignment="MiddleLeft" />
+    <Element Name="UIDateTimePicker" UseDefine="DefaultControl" Padding="3,0,0,0" TextAlignment="MiddleLeft" />
+  
+    <Element Name="UIButtonBar" UseDefine="DefaultControl" Padding="0" TextAlignment="MiddleCenter" >
+      <Element Name="ItemTemplate" DisabledText="GrayText" PressedText="#FFFFFFFF" Padding="0" RoundedCornerRadius="0" TextAlignment="MiddleCenter">
+        <Brush Name="NormalBackground" BorderColor="#FFFFFFFF" BorderThickness="0"/>
+        <Brush Name="PressedBackground" BorderColor="FocusedBorderColor" BorderThickness="0" Gradient="ButtonPressedBkgnd"/>
+      </Element>
+    </Element>
+
+    <Element Name="UISegmentedButtons" UseDefine="DefaultControl" Padding="0" TextAlignment="MiddleCenter" >
+      <Element Name="ItemTemplate" DisabledText="GrayText" Padding="0" RoundedCornerRadius="0" TextAlignment="MiddleCenter">
+        <Brush Name="NormalBackground" BorderColor="#FFFFFFFF" BorderThickness="0"/>
+        <Brush Name="PressedBackground" BorderColor="FocusedBorderColor" BorderThickness="0" Gradient="ButtonPressedBkgnd"/>
+        <Text Name="PressedText" ForeColor="ControlText" Font="Tahoma,9,Bold" />
+      </Element>
+    </Element>
+  
+    <Element Name="UINavigationBar" UseDefine="DefaultControl" Padding="0" TextAlignment="MiddleCenter" >
+      <Element Name="ItemTemplate" NormalText="#FF999999" DisabledText="GrayText" PressedText="#FF232323" Padding="0" RoundedCornerRadius="0" TextAlignment="MiddleCenter"/>
+    </Element>
+  
+  
+    <Element Name="UINumericUpDown" Padding="3,2,3,2" TextAlignment="MiddleLeft" RoundedCornerRadius="4">
+      <Brush Name="NormalBackground" BackColor="#FFFFFFFF" BorderColor="BorderColor" BorderThickness="1" />
+      <Brush Name="FocusedBackground" BackColor="#FFFBFFD1" BorderColor="FocusedBorderColor" BorderThickness="2"/>
+      <Text Name="DisabledText" ForeColor="GrayText" />
+    </Element>
+  
+    <Element Name="UIProgressBar" UseDefine="DefaultControl">
+      <Brush Name="ProgressFill" Gradient="ProgressFill" />
+    </Element>
+  
+    <Element Name="UITextBox" Padding="5,2,5,2" DefaultWidth="100" DefaultHeight="20" TextAlignment="MiddleLeft" RoundedCornerRadius="4" NormalText="ControlText" DisabledText="GrayText">
+      <Brush Name="NormalBackground" BackColor="#FFFFFFFF" BorderColor="BorderColor" BorderThickness="1" />
+      <Brush Name="FocusedBackground" BackColor="#FFFBFFD1" BorderColor="FocusedBorderColor" BorderThickness="2"/>
+    </Element>
+    
+    <!-- List Controls-->
+    <Element Name="UIListView" UseDefine="DefaultListView" >
+      <Element Name="AlternateDataTemplate" Padding="4" NormalBackground="#FFF0F0F0" DisabledText="GrayText"/>
+      <Property Name="RowLineThickness" Int="1"/>
+      <Property Name="RowLineColor" Color="#FFD0D0D0"/>
+    </Element>
+    <Element Name="UIColorList" UseDefine="DefaultListView" />
+    
+    <!-- OptionView Control-->  
+    <Element Name="UIOptionRow" UseDefine="DefaultOptionRow"/>
+    <Element Name="UIOptionView" DisabledText="GrayText">
+      <Text Name="NormalText" ForeColor="ControlText" Font="Tahoma,12,Regular" />
+      <Element Name="HeaderTemplate" DisabledText="GrayText">
+        <Text Name="NormalText" ForeColor="ControlText" Font="Tahoma,9,Regular" />
+      </Element>
+      <Element Name="RowTemplate" UseDefine="DefaultOptionRow"/>
+      <Element Name="SelectedRowTemplate" UseDefine="DefaultOptionRow" NormalText="#FFFFFFFF" DisabledText="#FFA0A0A0">
+        <Brush Name="NormalBackground" BackColor="#FF505050" BorderColor="BorderColor" BorderThickness="1"/>
+      </Element>
+    </Element>
+    
+    <!-- Forms -->
+    <Element Name="UIColorForm" Padding="5">
+      <Brush Name="NormalBackground" BackColor="FormColor" BorderColor="BorderColor" BorderThickness="2" />
+      <Text Name="NormalText" ForeColor="ControlText" />
+      <Text Name="DisabledText" ForeColor="GrayText" />
+    </Element>
+    <Element Name="UIDateTimeForm">
+      <Brush Name="NormalBackground" BackColor="FormColor" BorderColor="BorderColor" BorderThickness="2" />
+      <Text Name="NormalText" ForeColor="ControlText" />
+      <Text Name="DisabledText" ForeColor="GrayText" />
+    </Element>
+                              
+  </Theme>
+</Resco.UIElements>
+

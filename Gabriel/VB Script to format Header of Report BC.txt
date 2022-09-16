@@ -1,0 +1,56 @@
+Public Shared Function PeriodFormat(ByVal Period As String, ByVal Name As String, ByVal Col1 As String,  ByVal Col2 As String, ByVal Col3 As String, ByVal Col4 As String, ByVal Col5 As String, ByVal rows As String)
+  if Name = "Balance Sheets"
+    if Col5 <> "" Then
+       Return "As of " & Col1 & ", " & Col2 & ", " & Col3 & ", " & Col4 & " and " & Col5
+     elseif Col4 <> "" Then
+       Return "As of " & Col1 & ", " & Col2 & ", " & Col3 & " and " & Col4
+     elseif Col3 <> "" Then
+       Return "As of " & Col1 & ", " & Col2 & " and " & Col3
+     elseif Col2 <> "" Then
+       Return "As of " & Col1 & " and " & Col2
+     elseif Col1 <> "" Then
+       Return "As of " & Col1
+     end if
+  elseif Name = "Statement of Cash Flows" Then
+    if Col5 <> "" Then
+       Return "As of " & Col1 & ", " & Col2 & ", " & Col3 & ", " & Col4 & " and " & Col5
+    elseif Col4 <> "" Then
+       Return "As of " & Col1 & ", " & Col2 & ", " & Col3 & " and " & Col4
+    elseif Col3 <> "" Then
+       Return "As of " & Col1 & ", " & Col2 & " and " & Col3
+    elseif Col2 <> "" Then
+       Return "As of " & Col1 & " and " & Col2
+    elseif Col1 <> "" Then
+       Return "As of " & Col1
+    end if
+    elseif Name = "Statement of Operations" Then
+      if Col5 <> "" Then
+         Return "Three Months Ended " & Col1 & ", " & right(Col2, 4) & ", " & right(Col3, 4) & ", " & right(Col4, 4) & " and " & right(Col5, 4)
+       elseif Col4 <> "" Then
+         Return "Three Months Ended " & Col1 & ", " & right(Col2, 4) & ", " & right(Col3, 4) & " and " & right(Col4, 4)
+       elseif Col3 <> "" Then
+         Return "Three Months Ended " & Col1 & ", " & right(Col2, 4) & " and " & right(Col3, 4)
+       elseif Col2 <> "" Then
+         Return "Three Months Ended " & Col1 & " and " & right(Col2, 4)
+       end if
+   elseif Name = "Schedules of Operating Expenses" Then
+      if Col5 <> "" Then
+         Return "Three Months Ended " & Col1 & ", " & right(Col2, 4) & ", " & right(Col3, 4) & ", " & right(Col4, 4) & " and " & right(Col5, 4)
+       elseif Col4 <> "" Then
+         Return "Three Months Ended " & Col1 & ", " & right(Col2, 4) & ", " & right(Col3, 4) & " and " & right(Col4, 4)
+       elseif Col3 <> "" Then
+         Return "Three Months Ended " & Col1 & ", " & right(Col2, 4) & " and " & right(Col3, 4)
+       elseif Col2 <> "" Then
+         Return "Three Months Ended " & Col1 & " and " & right(Col2, 4)
+       end if
+   elseif Name = "Statement of Changes in Members' Equity" Then
+      Dim aDate As date
+      Dim sDate As String
+      Dim arr() As String
+      aDate = cdate(right(Period,8))
+      sDate = formatdatetime(aDate,1)
+      arr = Split(sDate, ",")
+      Return "As of" & arr(1) & "," & arr(2)
+      end if
+  Return Period
+End Function

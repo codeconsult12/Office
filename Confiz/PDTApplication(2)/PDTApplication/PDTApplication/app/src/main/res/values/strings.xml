@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">PDTApplication</string>
+    <string name="ip_address">IP: 192.168.253.129</string>
+    <string name="invalid_username">Invalid username. Please try again.</string>
+    <string name="invalid_password">Invalid password. Please try again.</string>
+</resources>

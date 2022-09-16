@@ -1,0 +1,25 @@
+DYN365-ADMIN
+kMLYu2C64oLch3JkvYqzyhvfIfLgOtpd5buBj36L6k4=
+
+Name: Dyn365-Admin@friedmanllp.com
+
+Password: Vobobinot-88
+
+
+For On prem gateway recovery pass
+salam@sprucetech
+CnC@0322
+
+
+
+
+
+
+
+Remote computer name- SE-DEV-02
+Local account username- SAlam
+Local Account Password- fH7GSu8zc65yseZPq
+ 
+Serverless SQL- SE-DB-01 (73.128.203.219)
+Admin- Silvereye
+Pass- 7PG5oXapki4MmJ3uHww8kcUd28bbaP

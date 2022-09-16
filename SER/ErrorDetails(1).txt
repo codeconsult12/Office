@@ -1,0 +1,30 @@
+Exception Message: Index was outside the bounds of the array.
+
+ErrorCode: -2147220891
+HexErrorCode: 0x80040265
+
+ErrorDetails: 
+	ApiExceptionSourceKey: Plugin/$Microsoft.Crm.Workflow.Services.ProxyCustomActivity
+	ApiStepKey: 662aaa7c-1f04-ec11-94ef-00224809e53b
+	ApiDepthKey: 1
+	ApiActivityIdKey: c11aa976-d918-45e9-a680-92b8b0706172
+	ApiPluginSolutionNameKey: System
+	ApiStepSolutionNameKey: System
+	ApiExceptionCategory: ClientError
+	ApiExceptionMessageName: IsvUnExpected
+	ApiExceptionHttpStatusCode: 400
+	OperationStatus: 0
+	SubErrorCode: -2146233088
+	Plugin: 
+		PluginTrace: [Microsoft.Crm.ObjectModel: Microsoft.Crm.ObjectModel.SyncWorkflowExecutionPlugin]
+[662aaa7c-1f04-ec11-94ef-00224809e53b: ]
+Starting sync workflow '_SER_PermissionAPForPerfectPowerRelated', Id: 5c2aaa7c-1f04-ec11-94ef-00224809e53b
+Sync workflow '_SER_PermissionAPForPerfectPowerRelated' terminated with error 'Index was outside the bounds of the array.'
+
+TraceText: 
+	[Microsoft.Crm.ObjectModel: Microsoft.Crm.ObjectModel.SyncWorkflowExecutionPlugin]
+	[662aaa7c-1f04-ec11-94ef-00224809e53b: ]
+	Starting sync workflow '_SER_PermissionAPForPerfectPowerRelated', Id: 5c2aaa7c-1f04-ec11-94ef-00224809e53b
+	Sync workflow '_SER_PermissionAPForPerfectPowerRelated' terminated with error 'Index was outside the bounds of the array.'
+
+Activity Id: 10b387cf-6143-4974-a4a2-3e04a2f0c1b9

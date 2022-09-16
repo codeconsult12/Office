@@ -1,0 +1,27 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31205.134
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PDT", "PDT\PDT.csproj", "{C8066667-FF11-43D2-982C-1FBEC92332CA}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{C8066667-FF11-43D2-982C-1FBEC92332CA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C8066667-FF11-43D2-982C-1FBEC92332CA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C8066667-FF11-43D2-982C-1FBEC92332CA}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{C8066667-FF11-43D2-982C-1FBEC92332CA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C8066667-FF11-43D2-982C-1FBEC92332CA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C8066667-FF11-43D2-982C-1FBEC92332CA}.Release|Any CPU.Deploy.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {D04B59E4-0929-4976-8B4F-B556E500FE04}
+	EndGlobalSection
+EndGlobal

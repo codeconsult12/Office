@@ -1,0 +1,266 @@
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+
+
+  <!-- jQuery first, then Popper.js, then Bootstrap JS. -->
+
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
+   <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+
+<script src="https://gabrielny.sharepoint.com/sites/GabrielTeam/SiteAssets/zoom.js"></script>
+
+<style>
+
+    .navbar{
+        padding: 0 !important;
+    }
+</style>
+
+<div class="navbar navbar-dark navbar-expand-md" id="toc-side-bar">
+    <a class="navbar-toggler" data-toggle="collapse" id="btn-menu" >
+        <span class="navbar-toggler-icon"></span>
+    </a>
+    <div  id="navbarNav">
+        <ul class="navbar-nav" id="sp-toc" ></ul>
+    </div>
+</div>
+<div class="page-wrap" id="divComment"></div>
+	
+	<style type="text/css">
+		#sp-toc {
+			padding: 10px;
+			/* Add a padding between the border and the TOC content */
+			background-color: #f9f9f9;
+			/* Add a background color of the TOC */
+			min-width: 200px;
+			/* Add only a minimal width like that, the TOC can be extensible */
+			display: inline-block;
+			border: 1px solid #aaaaaa;
+			/* Add a border arround the TOC */
+			list-style: none;
+			/* Remove default style list */
+                        overflow-y: scroll;
+height:350pt;
+		}
+
+		#sp-toc li {
+			/* If you need to add custom style on all <li> */
+		}
+
+		#sp-toc li a {
+			text-decoration: none;
+			/* Remove default link underline */
+		}
+
+		#sp-toc .class-toc-h1 {
+			/* currently, the first level supported by the script */
+		}
+
+		#sp-toc .class-toc-h2 {
+			/* Add a indentation greatter than the previous one */
+			padding-left: 10px;
+		}
+
+		#sp-toc .class-toc-h3 {
+			/* Add a indentation greatter than the previous one */
+			padding-left: 20px;
+		}
+
+		#sp-toc .class-toc-h4 {
+			/* Add a indentation greatter than the previous one */
+			padding-left: 30px;
+		}
+
+		#sp-toc .class-toc-h5 {
+			/* Add a indentation greatter than the previous one */
+			padding-left: 40px;
+		}
+
+		#sp-toc .class-toc-h6 {
+			/* Add a indentation greatter than the previous one */
+			padding-left: 50px;
+		}
+		
+/*		.page-wrap{
+			
+			-webkit-transform: rotate(-90deg);
+			-moz-transform: rotate(-90deg);
+			-o-transform: rotate(-90deg);
+			-ms-transform: rotate(-90deg);
+			transform: rotate(-90deg);
+		}
+		
+		.page-wrap:hover{
+			-webkit-transform: rotate(0deg);
+			-moz-transform: rotate(0deg);
+			-o-transform: rotate(0deg);
+			-ms-transform: rotate(0deg);
+			transform: rotate(0deg);
+		}
+		
+		.mfp-img{
+			width: 100% !important;
+			max-width:100% !important;
+			transform:scale(1.25);
+			margin-left: auto !important;
+			margin-right:auto !important;
+            overflow: auto;
+			max-height:100%;
+		}
+		
+*/
+
+	.zoom {
+			display: inline-block;
+			position: relative;
+		}
+.navbar-toggler-icon{
+		background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(0, 0, 0, 0.5)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E") !important;
+                margin-top: -20px;
+                margin-left: 20px;
+    }
+    #e5774356-104b-4684-a7c1-e03ff7d9435f{
+        position: sticky !important;
+        top: 0 !important;
+     }
+</style>
+
+
+<script type="text/javascript">
+    $( "#btn-menu" ).click(function() {
+        if($("#navbarNav").css("display")== "block") {
+            $("#navbarNav").css("display","none");
+        }
+        else {
+            $("#navbarNav").css("display","block");
+       }
+    });
+    console.log($(".navbar-toggler").css("display"))
+    if($(".navbar-toggler").css("display") == "block") {
+        $("#navbarNav").css("display","none");
+        $("#toc-side-bar").css("margin-top", "-45px");
+        $(".CanvasSection-xl4").css({ "right": "0px", "width": "100%" });
+	$(".navbar").css("display","block");
+	$("#btn-menu").css("float","right");
+
+    }
+
+   
+
+window.onload=buildToc();
+
+	$(document).ready(function (){
+		//buildToc();
+		$('.zoom').zoom();
+//		$('.image-popup').on('click', function (event){
+//			console.log("clicked");
+//			$.magnificPopup.open({
+//				type:'image',
+//				items:{
+//					src: $(this).attr("src")
+//				}
+//			});
+//			event.preventDefault();
+//		});
+	});
+		/**
+		 * The main function to build TOC
+		 */
+		function buildToc() {
+		
+
+			$("img").each(function (index) {
+				var imgsrc=$(this).attr("data-sp-originalimgsrc");
+				if (typeof imgsrc !== "undefined"){
+        			    var html="<span class='zoom'><img src='https://gabrielny.sharepoint.com"+imgsrc+"' style='max-width:100%'></span>";
+				    $(this).replaceWith(html);
+				    console.log(imgsrc);
+				}
+			});
+			/* Init title level counters */
+			var countH2 = countH3 = countH4 = countH5 = countH6 = 0;
+
+			/**
+			 * DOMElement : the TOC container retrieved by ID
+			 */
+			var toc = document.getElementById("sp-toc");
+
+		   
+
+			/**
+			 * TOC Builder
+			 */
+			function nodesToc() {
+				/* Get all HTML tags from the current page */
+				var obj = document.getElementsByTagName("*");
+				var tagList = "H2;H3;H4;H5;H6;";
+				var str = "";
+				var lvl;
+				/* Loop on each HTML tag */
+				for (var i = 0; i < obj.length; i++) {
+					/* If tag is a title tag */
+					if (tagList.indexOf(obj[i].tagName + ";") >= 0) {
+						
+						/* Get the number of the multilevel list in accordance with the current title */
+						
+						lvl = getNumberLevel(obj[i].tagName);
+						/* HTML template */
+						if(obj[i].id === ""){
+							var inner = obj[i].innerHTML;
+							inner = inner.replace(/<\/?span[^>]*>/g,"");
+							var innerWithoutSpace = inner.split(" ").join("-").toLowerCase().split(":").join("").split("/").join("").split("--").join("-");
+							str += "<li class='" + getClassLvl(obj[i].tagName) + "'><a href='#"+ innerWithoutSpace +"'>"  + lvl + " " + inner + "</a></li>";
+						}
+						else{
+							
+							str += "<li class='" + getClassLvl(obj[i].tagName) + "'><a href='#"+obj[i].id+"'>" + lvl + " " + obj[i].innerHTML + "</a></li>";
+						}					
+					}
+				}
+				if(str.indexOf("sp-comments") == -1){
+					lvl++;
+					str+="<li class='class-toc-h2'><a href='#sp-comments'>" + lvl +  " Comments</a></li>";
+				}
+				return str;
+			}
+			
+			/**
+			 * Insert into TOC container the chapters
+			 */
+			toc.innerHTML = nodesToc();
+			
+			/**
+			 * Get CSS class in accordance with the title level
+			 */
+			function getClassLvl(_tagName) {
+				return "class-toc-h" + _tagName.replace(/h/ig, '');
+			}
+
+			/**
+			 * Multilevel list generator
+			 */
+			function getNumberLevel(_tagName) {
+				/*if (_tagName === "H1") {
+					countH2 = countH3 = countH4 = countH5 = countH6 = 0;
+					return ++countH1;
+				} else*/ if (_tagName === "H2") {
+					countH3 = countH4 = countH5 = countH6 = 0;
+					return ++countH2;
+				} else if (_tagName === "H3") {
+					countH4 = countH5 = countH6 = 0; /* Reset next level number */
+					return countH2 + "." + ++countH3;
+				} else if (_tagName === "H4") {
+					countH5 = countH6 = 0; /* Reset next level number */
+					return countH2 + "." + countH3 + "." + ++countH4;
+				} else if (_tagName === "H5") {
+					countH6 = 0; /* Reset next level number */
+					return countH2 + "." + countH3 + "." + countH4 + "." + ++countH5;
+				} else if (_tagName === "H6") {
+					return countH2 + "." + countH3 + "." + countH4 + "." + countH5 + "." + ++countH6;
+				}
+			}
+		}
+
+	</script>

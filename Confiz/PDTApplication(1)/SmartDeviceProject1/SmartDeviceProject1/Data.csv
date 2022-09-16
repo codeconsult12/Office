@@ -1,0 +1,5 @@
+ProductId,Barcode,Name,Description,Cost,Sale,Discount,DiscountPer
+1,123,Pepsi,Colddrink,150,180,15,10
+2,124,7 Up,Colddrink,120,150,12,10
+3,125,Lays,Snacks,50,70,5,10
+4,126,Biscuit,Biscuit,30,35,0,0

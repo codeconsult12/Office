@@ -1,0 +1,63 @@
+<link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<table style="margin-left:auto;">
+    <tr>
+        <td>
+             <i style="font-size:16px;" class="fa fa-search-plus increase"></i>
+	    <i style="font-size:16px;" class="fa fa-search-minus decrease"></i>
+            <i style="font-size:16px;" class="fa fa-search resetMe"></i>
+        </td>
+        <td>
+            <div id="google_translate_element" style="text-align:right;"></div>
+        </td>
+    </tr>
+</table>
+
+<script type="text/javascript">
+    function googleTranslateElementInit(){
+        new google.translate.TranslateElement({pageLanguage:'en', layout: google.translate.TranslateElement.InlineLayout.SIMPLE}, 'google_translate_element');
+    }
+
+    $(document).ready(function(){        
+$(".webPartTitle_33f8c64a ").html("<a href='https://gabrielny.sharepoint.com/sites/GabrielTeam/Sales/Lists/Sales Calendar/calendar.aspx' > Sales Calendar</a>");
+        var originalSize = $('div').css('font-size');        
+        // reset        
+        $(".resetMe").click(function(){
+            $('div').css('font-size', originalSize);        
+        });
+         
+        // Increase Font Size          
+        $(".increase").click(function(){        
+            var currentSize = $('div').css('font-size');        
+            var currentSize = parseFloat(currentSize)*1.2;          
+            $('div').css('font-size', currentSize);        
+            return false;          
+        });        
+ 
+        // Decrease Font Size      
+        $(".decrease").click(function(){        
+            var currentFontSize = $('div').css('font-size');        
+            var currentSize = $('div').css('font-size');        
+            var currentSize = parseFloat(currentSize)*0.8;        
+            $('div').css('font-size', currentSize);        
+            return false;
+        });
+$(".CanvasSection-col").not(":eq(0)").css("margin-top","-45px ");        
+    });
+
+    $("textarea [id*=TextField]").attr("readonly","false");
+$(document).ready( function () {
+    $(".logoWrapper-52").attr("href", "/sites/GabrielTeam");
+console.log("done!");
+});
+</script>
+<script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+<style>
+.fa{
+cursor:pointer;
+}
+p {
+    font-size: 14pt !important;
+}
+
+</style>

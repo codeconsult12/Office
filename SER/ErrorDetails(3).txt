@@ -1,0 +1,34 @@
+Exception Message: Index was outside the bounds of the array.
+
+ErrorCode: -2147220891
+HexErrorCode: 0x80040265
+
+ErrorDetails: 
+	ApiExceptionSourceKey: Plugin/$Microsoft.Crm.Workflow.Services.ProxyCustomActivity
+	ApiStepKey: 8e9575e5-680a-ec11-b6e6-000d3a5bd862
+	ApiDepthKey: 1
+	ApiActivityIdKey: 26cc621a-9c73-46f7-9ffa-67a731b815bc
+	ApiPluginSolutionNameKey: System
+	ApiStepSolutionNameKey: System
+	ApiExceptionCategory: ClientError
+	ApiExceptionMessageName: IsvUnExpected
+	ApiExceptionHttpStatusCode: 400
+	OperationStatus: 0
+	SubErrorCode: -2146233088
+	Plugin: 
+		PluginTrace: [Microsoft.Crm.ObjectModel: Microsoft.Crm.ObjectModel.SyncWorkflowExecutionPlugin]
+[8e9575e5-680a-ec11-b6e6-000d3a5bd862: ]
+Starting sync workflow '_SER_PermissionAPForPerfectPowerRelated', Id: 849575e5-680a-ec11-b6e6-000d3a5bd862
+Entering ConditionStep1_step: Test legal entities
+Entering CustomActivityStep4_step: Share with Perfect Power Team
+Sync workflow '_SER_PermissionAPForPerfectPowerRelated' terminated with error 'Index was outside the bounds of the array.'
+
+TraceText: 
+	[Microsoft.Crm.ObjectModel: Microsoft.Crm.ObjectModel.SyncWorkflowExecutionPlugin]
+	[8e9575e5-680a-ec11-b6e6-000d3a5bd862: ]
+	Starting sync workflow '_SER_PermissionAPForPerfectPowerRelated', Id: 849575e5-680a-ec11-b6e6-000d3a5bd862
+	Entering ConditionStep1_step: Test legal entities
+	Entering CustomActivityStep4_step: Share with Perfect Power Team
+	Sync workflow '_SER_PermissionAPForPerfectPowerRelated' terminated with error 'Index was outside the bounds of the array.'
+
+Activity Id: 4a48c3ca-5304-4cab-a1f6-506af474c60c

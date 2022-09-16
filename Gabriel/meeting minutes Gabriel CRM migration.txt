@@ -1,0 +1,16 @@
+integrated with Nav
+integrated with Website
+Lead Entity is there
+nav to CRM is happening not the other way
+   new customer
+   new orders
+   new invoice 
+
+custom developed
+website code is being maintained by Derek himself
+GAIR
+we need custom enitities listing
+Saghir looks into those enitities in the new environment
+custom workflows listing
+no addons in crm
+

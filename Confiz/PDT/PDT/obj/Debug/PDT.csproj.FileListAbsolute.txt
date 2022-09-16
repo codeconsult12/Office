@@ -1,0 +1,8 @@
+C:\Users\000103\Documents\Visual Studio 2008\Projects\PDT\PDT\bin\Debug\PDT.exe
+C:\Users\000103\Documents\Visual Studio 2008\Projects\PDT\PDT\bin\Debug\PDT.pdb
+C:\Users\000103\Documents\Visual Studio 2008\Projects\PDT\PDT\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\000103\Documents\Visual Studio 2008\Projects\PDT\PDT\obj\Debug\PDT.Properties.Resources.resources
+C:\Users\000103\Documents\Visual Studio 2008\Projects\PDT\PDT\obj\Debug\PDT.csproj.GenerateResource.Cache
+C:\Users\000103\Documents\Visual Studio 2008\Projects\PDT\PDT\obj\Debug\PDT.exe
+C:\Users\000103\Documents\Visual Studio 2008\Projects\PDT\PDT\obj\Debug\PDT.pdb
+C:\Users\000103\Documents\Visual Studio 2008\Projects\PDT\PDT\obj\Debug\iNTrack.Properties.Resources.resources

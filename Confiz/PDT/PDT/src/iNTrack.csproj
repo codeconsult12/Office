@@ -1,0 +1,241 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" DefaultTargets="Build">
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <ProjectType>local</ProjectType>
+    <ProjectVersion>7.10.377</ProjectVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{0E0A0627-8240-4571-83E0-37D6A024031B}</ProjectGuid>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <AssemblyName>iNTrack</AssemblyName>
+    <OutputType>WinExe</OutputType>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject>iNTrack.Program</StartupObject>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Ionic.Zip.CF">
+      <HintPath>dll\Ionic.Zip.CF.dll</HintPath>
+    </Reference>
+    <Reference Include="OpenNETCF">
+      <HintPath>dll\OpenNETCF.dll</HintPath>
+    </Reference>
+    <Reference Include="OpenNETCF.WindowsCE.Messaging">
+      <HintPath>dll\OpenNETCF.WindowsCE.Messaging.dll</HintPath>
+    </Reference>
+    <Reference Include="Resco.AdvancedComboBox.CF3">
+      <HintPath>dll\Resco.AdvancedComboBox.CF3.dll</HintPath>
+    </Reference>
+    <Reference Include="Resco.AdvancedTree.CF3">
+      <HintPath>dll\Resco.AdvancedTree.CF3.dll</HintPath>
+    </Reference>
+    <Reference Include="Resco.CompactChart.CF3">
+      <HintPath>dll\Resco.CompactChart.CF3.dll</HintPath>
+    </Reference>
+    <Reference Include="Resco.DetailView.CF3">
+      <HintPath>dll\Resco.DetailView.CF3.dll</HintPath>
+    </Reference>
+    <Reference Include="Resco.ImageBox.CF3">
+      <HintPath>dll\Resco.ImageBox.CF3.dll</HintPath>
+    </Reference>
+    <Reference Include="Resco.ScrollBar.CF3">
+      <HintPath>dll\Resco.ScrollBar.CF3.dll</HintPath>
+    </Reference>
+    <Reference Include="Resco.UIElements.Controls.CF3">
+      <HintPath>dll\Resco.UIElements.Controls.CF3.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System" />
+    <Reference Include="Resco.UIElements.CF3">
+      <HintPath>dll\Resco.UIElements.CF3.dll</HintPath>
+    </Reference>
+    <Reference Include="Resco.CommonControls.CF3">
+      <HintPath>dll\Resco.CommonControls.CF3.dll</HintPath>
+    </Reference>
+    <Reference Include="Resco.Core.CF3">
+      <HintPath>dll\Resco.Core.CF3.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Data" />
+    <Reference Include="Resco.OutlookControls.CF3">
+      <HintPath>dll\Resco.OutlookControls.CF3.dll</HintPath>
+    </Reference>
+    <Reference Include="Resco.AdvancedList.CF3">
+      <HintPath>dll\Resco.AdvancedList.CF3.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.WindowsCE.Forms">
+      <HintPath>dll\microsoft.windowsce.forms.dll</HintPath>
+    </Reference>
+    <Reference Include="Resco.SmartGrid.CF3">
+      <HintPath>dll\Resco.SmartGrid.CF3.dll</HintPath>
+    </Reference>
+    <Reference Include="PrinterCE.NetCF">
+      <HintPath>dll\PrinterCE.NetCF.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Data.SqlServerCe" />
+    <Reference Include="System.Xml" />
+    <Reference Include="Resco.MessageBox.CF3">
+      <HintPath>dll\Resco.MessageBox.CF3.dll</HintPath>
+    </Reference>
+    <Reference Include="OpenNETCF.WindowsCE">
+      <HintPath>dll\OpenNETCF.WindowsCE.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Core" />
+    <Reference Include="Microsoft.VisualBasic" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Compile Include="Global.cs" />
+    <Compile Include="iNTrack\frmLicense.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="iNTrack\frmDevSetup.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="iNTrack\Properties\Resources.cs" />
+    <Compile Include="iNTrack\OpenNETCFLib.cs" />
+    <Compile Include="iNTrack\imgManager.cs" />
+    <Compile Include="iNTrack\frmTransLine.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="iNTrack\frmOptions.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="iNTrack\frmPriceCheck.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="iNTrack\frmItems.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="iNTrack\frmHome.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="iNTrack\frmTransHeader.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="iNTrack\frmInvLookup.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="iNTrack\frmPrint.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="iNTrack\InteropLib.cs" />
+    <Compile Include="iNTrack\iNTrackService\Service.cs" />
+    <Compile Include="iNTrack\frmTransHeaders.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="iNTrack\Program.cs" />
+    <Compile Include="iNTrack\frmLookup.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="iNTrack\TitleControl.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="iNTrack\SqlCeLib.cs" />
+    <Compile Include="iNTrack\frmView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="iNTrack\frmTransLines.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="iNTrack\frmStockCount.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="iNTrack\frmLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="iNTrack\AXiNTrackService\serviceEndpoint.cs" />
+    <Compile Include="iNTrack\AXiNTrackService\BasicHttpBinding_AXiNTrack.cs" />
+    <Compile Include="iNTrack\AXiNTrackService\CallContext.cs" />
+    <Compile Include="iNTrack\AXiNTrackService\ArrayOfKeyValueOfstringstringKeyValueOfstringstring.cs" />
+    <Compile Include="iNTrack\AXiNTrackService\XppObjectBase.cs" />
+    <Compile Include="iNTrack\AXiNTrackService\ApntAxHHTUserSetupServiceContract.cs" />
+    <Compile Include="iNTrack\AXiNTrackService\NoYes.cs" />
+    <Compile Include="iNTrack\AXiNTrackService\ApntAxHHTUserRolesTableServiceContract.cs" />
+    <Compile Include="iNTrack\AXiNTrackService\ApntAxHHTUserLocationServiceContract.cs" />
+    <Compile Include="iNTrack\AXiNTrackService\ApntAxHHTTransHeaderServiceContract.cs" />
+    <Compile Include="iNTrack\AXiNTrackService\HHTAccountType.cs" />
+    <Compile Include="iNTrack\AXiNTrackService\HHTEntryType.cs" />
+    <Compile Include="iNTrack\AXiNTrackService\ApntAxHHTTransferServiceContract.cs" />
+    <Compile Include="iNTrack\AXiNTrackService\InventTransferStatus.cs" />
+    <Compile Include="iNTrack\AXiNTrackService\ApntAxHHTTransferLineServiceContract.cs" />
+    <Compile Include="iNTrack\AXiNTrackService\ApntAxHHTTransactionTableServiceContract.cs" />
+    <Compile Include="iNTrack\AXiNTrackService\ApntAxHHTTOTransporterContract.cs" />
+    <Compile Include="iNTrack\AXiNTrackService\ApntAxHHTSuppItemsServiceContract.cs" />
+    <Compile Include="iNTrack\AXiNTrackService\ApntAxHHTStockCountServiceContract.cs" />
+    <Compile Include="iNTrack\AXiNTrackService\ApntAxHHTStockCountBinServiceContract.cs" />
+    <Compile Include="iNTrack\AXiNTrackService\ApntAxHHTSetupTableServiceContract.cs" />
+    <Compile Include="iNTrack\AXiNTrackService\ApntAxHHTSalesTableServiceContract.cs" />
+    <Compile Include="iNTrack\AXiNTrackService\ApntAxHHTSalesLineServiceContract.cs" />
+    <Compile Include="iNTrack\AXiNTrackService\ApntAxHHTRegisterTableServiceContract.cs" />
+    <Compile Include="iNTrack\AXiNTrackService\ApntAxHHTReasonTableContract.cs" />
+    <Compile Include="iNTrack\AXiNTrackService\ApntADJType.cs" />
+    <Compile Include="iNTrack\AXiNTrackService\ApntAxHHTPurchTableServicesContract.cs" />
+    <Compile Include="iNTrack\AXiNTrackService\ApntAxHHTPurchLineServiceContract.cs" />
+    <Compile Include="iNTrack\AXiNTrackService\ApntAxHHTPricecCheckerServiceContract.cs" />
+    <Compile Include="iNTrack\AXiNTrackService\ApntAxHHTPORemaingQtyServiceContract.cs" />
+    <Compile Include="iNTrack\AXiNTrackService\ApntAxHHTPermissionTableServiceContract.cs" />
+    <Compile Include="iNTrack\AXiNTrackService\HHTModule.cs" />
+    <Compile Include="iNTrack\AXiNTrackService\ApntAxHHTOnHandQtyServiceContract.cs" />
+    <Compile Include="iNTrack\AXiNTrackService\ApntAxHHTModuleMappingServiceContract.cs" />
+    <Compile Include="iNTrack\AXiNTrackService\ApntAxHHTItemGroupTableServiceContract.cs" />
+    <Compile Include="iNTrack\AXiNTrackService\ApntAxHHTInventTableServiceContract.cs" />
+    <Compile Include="iNTrack\AXiNTrackService\ApntAxHHTInventLocationServiceContract.cs" />
+    <Compile Include="iNTrack\AXiNTrackService\ApntAxHHTDocSetupServiceContract.cs" />
+    <Compile Include="iNTrack\AXiNTrackService\ApntAxHHTCustVendServiceContract.cs" />
+    <Compile Include="iNTrack\AXiNTrackService\ApntAxHHTCustomerServiceContract.cs" />
+    <Compile Include="iNTrack\AXiNTrackService\ApntAxHHTCompanyDataServiceContract.cs" />
+    <Compile Include="iNTrack\AXiNTrackService\ApntAxHHTBarcodeTableServiceContract.cs" />
+    <Compile Include="iNTrack\Property.cs" />
+    <Compile Include="iNTrack\frmItem.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="iNTrack\CommonLib.cs" />
+    <Compile Include="iNTrack\iNTrackLib.cs" />
+    <EmbeddedResource Include="iNTrack.frmTransLine.resources" />
+    <EmbeddedResource Include="iNTrack.frmItem.resources" />
+    <EmbeddedResource Include="iNTrack.frmLicense.resources" />
+    <EmbeddedResource Include="iNTrack.frmHome.resources" />
+    <EmbeddedResource Include="iNTrack.frmDevSetup.resources" />
+    <EmbeddedResource Include="iNTrack.frmPriceCheck.resources" />
+    <EmbeddedResource Include="iNTrack.frmTransHeader.resources" />
+    <EmbeddedResource Include="iNTrack.frmLogin.resources" />
+    <EmbeddedResource Include="iNTrack.frmOptions.resources" />
+    <EmbeddedResource Include="iNTrack.imgManager.resources" />
+    <EmbeddedResource Include="iNTrack.frmStockCount.resources" />
+    <EmbeddedResource Include="iNTrack.frmInvLookup.resources" />
+    <EmbeddedResource Include="iNTrack.frmPrint.resources" />
+    <EmbeddedResource Include="iNTrack.frmTransLines.resources" />
+    <EmbeddedResource Include="iNTrack.frmView.resources" />
+    <EmbeddedResource Include="iNTrack.frmLookup.resources" />
+    <EmbeddedResource Include="iNTrack.frmTransHeaders.resources" />
+    <EmbeddedResource Include="iNTrack.Theme.Blue.xml" />
+    <EmbeddedResource Include="iNTrack.Theme.Default.xml" />
+    <EmbeddedResource Include="iNTrack.frmItems.resources" />
+    <EmbeddedResource Include="iNTrack.Properties.Resources.resources" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+  </ItemGroup>
+</Project>

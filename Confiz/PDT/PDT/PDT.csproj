@@ -1,0 +1,310 @@
+﻿<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="3.5">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{C8066667-FF11-43D2-982C-1FBEC92332CA}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>iNTrack</RootNamespace>
+    <AssemblyName>PDT</AssemblyName>
+    <ProjectTypeGuids>{4D628B5B-2FBC-4AA6-8C16-197242AEB884};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <PlatformFamilyName>PocketPC</PlatformFamilyName>
+    <PlatformID>4118C335-430C-497f-BE48-11C3316B135E</PlatformID>
+    <OSVersion>5.1</OSVersion>
+    <DeployDirSuffix>PDT</DeployDirSuffix>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <NativePlatformName>Windows Mobile 5.0 Pocket PC SDK</NativePlatformName>
+    <FormFactorID>
+    </FormFactorID>
+    <StartupObject>iNTrack.Program</StartupObject>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE;$(PlatformFamilyName)</DefineConstants>
+    <NoStdLib>true</NoStdLib>
+    <NoConfig>true</NoConfig>
+    <ErrorReport>prompt</ErrorReport>
+    <FileAlignment>512</FileAlignment>
+    <WarningLevel>4</WarningLevel>
+    <GenerateSerializationAssemblies>Off</GenerateSerializationAssemblies>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE;$(PlatformFamilyName)</DefineConstants>
+    <NoStdLib>true</NoStdLib>
+    <NoConfig>true</NoConfig>
+    <ErrorReport>prompt</ErrorReport>
+    <FileAlignment>512</FileAlignment>
+    <WarningLevel>4</WarningLevel>
+    <GenerateSerializationAssemblies>Off</GenerateSerializationAssemblies>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Ionic.Zip.CF, Version=1.9.1.8, Culture=neutral, PublicKeyToken=edbe51ad942a3f5c, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>dll\Ionic.Zip.CF.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.VisualBasic" />
+    <Reference Include="microsoft.windowsce.forms, Version=1.0.5000.0, Culture=neutral, PublicKeyToken=969db8053d3322ac">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>dll\microsoft.windowsce.forms.dll</HintPath>
+    </Reference>
+    <Reference Include="mscorlib" />
+    <Reference Include="OpenNETCF, Version=2.3.12317.0, Culture=neutral, PublicKeyToken=e60dbea84bb431b7, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>dll\OpenNETCF.dll</HintPath>
+    </Reference>
+    <Reference Include="OpenNETCF.WindowsCE, Version=2.3.12317.0, Culture=neutral, PublicKeyToken=e60dbea84bb431b7, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>dll\OpenNETCF.WindowsCE.dll</HintPath>
+    </Reference>
+    <Reference Include="OpenNETCF.WindowsCE.Messaging, Version=2.3.12317.0, Culture=neutral, PublicKeyToken=e60dbea84bb431b7, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>dll\OpenNETCF.WindowsCE.Messaging.dll</HintPath>
+    </Reference>
+    <Reference Include="PrinterCE.NetCF, Version=1.2.5.9, Culture=neutral, PublicKeyToken=64f246f527921934">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>dll\PrinterCE.NetCF.dll</HintPath>
+    </Reference>
+    <Reference Include="Resco.AdvancedComboBox.CF3, Version=6.12.0.5, Culture=neutral, PublicKeyToken=7444f602060105f9, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>dll\Resco.AdvancedComboBox.CF3.dll</HintPath>
+    </Reference>
+    <Reference Include="Resco.AdvancedList.CF3, Version=6.12.0.2, Culture=neutral, PublicKeyToken=7444f602060105f9, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>dll\Resco.AdvancedList.CF3.dll</HintPath>
+    </Reference>
+    <Reference Include="Resco.AdvancedTree.CF3, Version=6.12.0.4, Culture=neutral, PublicKeyToken=7444f602060105f9, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>dll\Resco.AdvancedTree.CF3.dll</HintPath>
+    </Reference>
+    <Reference Include="Resco.CommonControls.CF3, Version=6.12.0.4, Culture=neutral, PublicKeyToken=7444f602060105f9, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>dll\Resco.CommonControls.CF3.dll</HintPath>
+    </Reference>
+    <Reference Include="Resco.CompactChart.CF3, Version=6.12.0.1, Culture=neutral, PublicKeyToken=7444f602060105f9, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>dll\Resco.CompactChart.CF3.dll</HintPath>
+    </Reference>
+    <Reference Include="Resco.Core.CF3, Version=3.5.0.0, Culture=neutral, PublicKeyToken=7444f602060105f9, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>dll\Resco.Core.CF3.dll</HintPath>
+    </Reference>
+    <Reference Include="Resco.DetailView.CF3, Version=6.12.0.2, Culture=neutral, PublicKeyToken=7444f602060105f9, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>dll\Resco.DetailView.CF3.dll</HintPath>
+    </Reference>
+    <Reference Include="Resco.ImageBox.CF3, Version=6.12.0.0, Culture=neutral, PublicKeyToken=7444f602060105f9, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>dll\Resco.ImageBox.CF3.dll</HintPath>
+    </Reference>
+    <Reference Include="Resco.MessageBox.CF3, Version=6.12.0.4, Culture=neutral, PublicKeyToken=7444f602060105f9, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>dll\Resco.MessageBox.CF3.dll</HintPath>
+    </Reference>
+    <Reference Include="Resco.OutlookControls.CF3, Version=6.12.1.0, Culture=neutral, PublicKeyToken=7444f602060105f9, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>dll\Resco.OutlookControls.CF3.dll</HintPath>
+    </Reference>
+    <Reference Include="Resco.ScrollBar.CF3, Version=6.12.0.1, Culture=neutral, PublicKeyToken=7444f602060105f9, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>dll\Resco.ScrollBar.CF3.dll</HintPath>
+    </Reference>
+    <Reference Include="Resco.SmartGrid.CF3, Version=6.12.0.3, Culture=neutral, PublicKeyToken=7444f602060105f9, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>dll\Resco.SmartGrid.CF3.dll</HintPath>
+    </Reference>
+    <Reference Include="Resco.UIElements.CF3, Version=6.12.1.6, Culture=neutral, PublicKeyToken=7444f602060105f9, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>dll\Resco.UIElements.CF3.dll</HintPath>
+    </Reference>
+    <Reference Include="Resco.UIElements.Controls.CF3, Version=6.12.1.6, Culture=neutral, PublicKeyToken=7444f602060105f9, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>dll\Resco.UIElements.Controls.CF3.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.SqlServerCe, Version=3.5.0.0, Culture=neutral, PublicKeyToken=3be235df1c8d2ad3, processorArchitecture=MSIL" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Global.cs" />
+    <Compile Include="iNTrack\AXiNTrackService\ApntADJType.cs" />
+    <Compile Include="iNTrack\AXiNTrackService\ApntAxHHTBarcodeTableServiceContract.cs" />
+    <Compile Include="iNTrack\AXiNTrackService\ApntAxHHTCompanyDataServiceContract.cs" />
+    <Compile Include="iNTrack\AXiNTrackService\ApntAxHHTCustomerServiceContract.cs" />
+    <Compile Include="iNTrack\AXiNTrackService\ApntAxHHTCustVendServiceContract.cs" />
+    <Compile Include="iNTrack\AXiNTrackService\ApntAxHHTDocSetupServiceContract.cs" />
+    <Compile Include="iNTrack\AXiNTrackService\ApntAxHHTInventLocationServiceContract.cs" />
+    <Compile Include="iNTrack\AXiNTrackService\ApntAxHHTInventTableServiceContract.cs" />
+    <Compile Include="iNTrack\AXiNTrackService\ApntAxHHTItemGroupTableServiceContract.cs" />
+    <Compile Include="iNTrack\AXiNTrackService\ApntAxHHTModuleMappingServiceContract.cs" />
+    <Compile Include="iNTrack\AXiNTrackService\ApntAxHHTOnHandQtyServiceContract.cs" />
+    <Compile Include="iNTrack\AXiNTrackService\ApntAxHHTPermissionTableServiceContract.cs" />
+    <Compile Include="iNTrack\AXiNTrackService\ApntAxHHTPORemaingQtyServiceContract.cs" />
+    <Compile Include="iNTrack\AXiNTrackService\ApntAxHHTPricecCheckerServiceContract.cs" />
+    <Compile Include="iNTrack\AXiNTrackService\ApntAxHHTPurchLineServiceContract.cs" />
+    <Compile Include="iNTrack\AXiNTrackService\ApntAxHHTPurchTableServicesContract.cs" />
+    <Compile Include="iNTrack\AXiNTrackService\ApntAxHHTReasonTableContract.cs" />
+    <Compile Include="iNTrack\AXiNTrackService\ApntAxHHTRegisterTableServiceContract.cs" />
+    <Compile Include="iNTrack\AXiNTrackService\ApntAxHHTSalesLineServiceContract.cs" />
+    <Compile Include="iNTrack\AXiNTrackService\ApntAxHHTSalesTableServiceContract.cs" />
+    <Compile Include="iNTrack\AXiNTrackService\ApntAxHHTSetupTableServiceContract.cs" />
+    <Compile Include="iNTrack\AXiNTrackService\ApntAxHHTStockCountBinServiceContract.cs" />
+    <Compile Include="iNTrack\AXiNTrackService\ApntAxHHTStockCountServiceContract.cs" />
+    <Compile Include="iNTrack\AXiNTrackService\ApntAxHHTSuppItemsServiceContract.cs" />
+    <Compile Include="iNTrack\AXiNTrackService\ApntAxHHTTOTransporterContract.cs" />
+    <Compile Include="iNTrack\AXiNTrackService\ApntAxHHTTransactionTableServiceContract.cs" />
+    <Compile Include="iNTrack\AXiNTrackService\ApntAxHHTTransferLineServiceContract.cs" />
+    <Compile Include="iNTrack\AXiNTrackService\ApntAxHHTTransferServiceContract.cs" />
+    <Compile Include="iNTrack\AXiNTrackService\ApntAxHHTTransHeaderServiceContract.cs" />
+    <Compile Include="iNTrack\AXiNTrackService\ApntAxHHTUserLocationServiceContract.cs" />
+    <Compile Include="iNTrack\AXiNTrackService\ApntAxHHTUserRolesTableServiceContract.cs" />
+    <Compile Include="iNTrack\AXiNTrackService\ApntAxHHTUserSetupServiceContract.cs" />
+    <Compile Include="iNTrack\AXiNTrackService\ArrayOfKeyValueOfstringstringKeyValueOfstringstring.cs" />
+    <Compile Include="iNTrack\AXiNTrackService\BasicHttpBinding_AXiNTrack.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="iNTrack\AXiNTrackService\CallContext.cs" />
+    <Compile Include="iNTrack\AXiNTrackService\HHTAccountType.cs" />
+    <Compile Include="iNTrack\AXiNTrackService\HHTEntryType.cs" />
+    <Compile Include="iNTrack\AXiNTrackService\HHTModule.cs" />
+    <Compile Include="iNTrack\AXiNTrackService\InventTransferStatus.cs" />
+    <Compile Include="iNTrack\AXiNTrackService\NoYes.cs" />
+    <Compile Include="iNTrack\AXiNTrackService\serviceEndpoint.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="iNTrack\AXiNTrackService\XppObjectBase.cs" />
+    <Compile Include="iNTrack\CommonLib.cs" />
+    <Compile Include="iNTrack\iNTrackService\Service.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="iNTrack\frmDevSetup.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="iNTrack\frmHome.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="iNTrack\frmInvLookup.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="iNTrack\frmItem.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="iNTrack\frmItems.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="iNTrack\frmLicense.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="iNTrack\frmLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="iNTrack\frmLookup.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="iNTrack\frmOptions.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="iNTrack\frmPriceCheck.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="iNTrack\frmPrint.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="iNTrack\frmStockCount.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="iNTrack\frmTransHeader.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="iNTrack\frmTransHeaders.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="iNTrack\frmTransLine.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="iNTrack\frmTransLines.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="iNTrack\frmView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="iNTrack\imgManager.cs" />
+    <Compile Include="iNTrack\InteropLib.cs" />
+    <Compile Include="iNTrack\iNTrackLib.cs" />
+    <Compile Include="iNTrack\OpenNETCFLib.cs" />
+    <Compile Include="iNTrack\Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="iNTrack.frmDevSetup.resources" />
+    <EmbeddedResource Include="iNTrack.frmHome.resources" />
+    <EmbeddedResource Include="iNTrack.frmInvLookup.resources" />
+    <EmbeddedResource Include="iNTrack.frmItem.resources" />
+    <EmbeddedResource Include="iNTrack.frmItems.resources" />
+    <EmbeddedResource Include="iNTrack.frmLicense.resources" />
+    <EmbeddedResource Include="iNTrack.frmLogin.resources" />
+    <EmbeddedResource Include="iNTrack.frmLookup.resources" />
+    <EmbeddedResource Include="iNTrack.frmOptions.resources" />
+    <EmbeddedResource Include="iNTrack.frmPriceCheck.resources" />
+    <EmbeddedResource Include="iNTrack.frmPrint.resources" />
+    <EmbeddedResource Include="iNTrack.frmStockCount.resources" />
+    <EmbeddedResource Include="iNTrack.frmTransHeader.resources" />
+    <EmbeddedResource Include="iNTrack.frmTransHeaders.resources" />
+    <EmbeddedResource Include="iNTrack.frmTransLine.resources" />
+    <EmbeddedResource Include="iNTrack.frmTransLines.resources" />
+    <EmbeddedResource Include="iNTrack.frmView.resources" />
+    <EmbeddedResource Include="iNTrack.imgManager.resources" />
+    <EmbeddedResource Include="iNTrack.Properties.Resources.resources" />
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="iNTrack\Property.cs" />
+    <Compile Include="iNTrack\SqlCeLib.cs" />
+    <Compile Include="iNTrack\TitleControl.cs">
+      <SubType>Component</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="iNTrack.Theme.Blue.xml" />
+    <Content Include="iNTrack.Theme.Default.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="ClassDiagram1.cd" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CompactFramework.CSharp.targets" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}">
+        <HostingProcess disable="1" />
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<DeviceManagement>
+  <ServiceURL>
+http://192.168.253.133:8081/service.asmx</ServiceURL>
+  <DeviceID>A001</DeviceID>
+  <DeviceName>A001</DeviceName>
+  <CompanyName>ARMED FORCES CO-OPERATIVE SOCIETY</CompanyName>
+  <CompanyId>AFCS</CompanyId>
+  <LocationId>AFC1010</LocationId>
+  <LocationName>CupCafe-AFCOOP HO</LocationName>
+  <TimeZoneId>1</TimeZoneId>
+  <TimeZone>(UTC-12:00) International Date Line West</TimeZone>
+  <IPAddress>192.168.253.129 </IPAddress>
+  <MACAddress>00:03:ff:91:ae:45</MACAddress>
+</DeviceManagement>

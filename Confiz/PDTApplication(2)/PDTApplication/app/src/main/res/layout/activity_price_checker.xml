@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".DeviceActivity">
+
+    <TextView
+        android:id="@+id/price_checker_text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Price Checker"
+        android:textAlignment="center"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:layout_margin="25dp"
+        android:layout_gravity="center"/>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Barcode: "
+            android:textSize="20dp"
+            android:id="@+id/barcode_text_view"
+            android:layout_margin="14dp"/>
+        <EditText
+            android:id="@+id/barcode_edit_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/barcode_text_view" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Item Code: "
+            android:textSize="20dp"
+            android:id="@+id/item_code_text_view"
+            android:layout_margin="14dp"/>
+        <EditText
+            android:id="@+id/item_code_edit_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/item_code_text_view" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Description: "
+            android:textSize="20dp"
+            android:id="@+id/description"
+            android:layout_margin="14dp"/>
+        <TextView
+            android:id="@+id/description_text_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/description"
+            android:layout_marginTop="20dp"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="UOM: "
+            android:textSize="20dp"
+            android:id="@+id/UOM_text_view"
+            android:layout_margin="14dp"/>
+        <Spinner
+            android:id="@+id/UOM_spinner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/UOM_text_view"
+            android:spinnerMode="dropdown"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Vendor: "
+            android:textSize="20dp"
+            android:id="@+id/vendor"
+            android:layout_margin="14dp"/>
+        <TextView
+            android:id="@+id/vendor_text_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/vendor"
+            android:layout_marginTop="20dp"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Unit Price: "
+            android:textSize="20dp"
+            android:id="@+id/unit_price"
+            android:layout_margin="14dp"/>
+        <TextView
+            android:id="@+id/unit_price_text_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/unit_price"
+            android:layout_marginTop="20dp"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sales Price: "
+            android:textSize="20dp"
+            android:id="@+id/sales_price"
+            android:layout_margin="14dp"/>
+        <TextView
+            android:id="@+id/sales_price_text_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/sales_price"
+            android:layout_marginTop="20dp"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1">
+
+    <Button
+        android:id="@+id/back_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="-45dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="40dp"
+        android:text="Back"
+        android:textColor="@android:color/white" />
+    </RelativeLayout>
+
+</LinearLayout>

@@ -1,0 +1,113 @@
+using System;
+using System.Linq;
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.Data;
+using System.Drawing;
+using System.Text;
+using System.Windows.Forms;
+using System.Net;
+using SmartDeviceProject1.DBClasses;
+
+namespace SmartDeviceProject1
+{
+    public partial class Login : Form
+    {
+        public Login()
+        {
+            InitializeComponent();
+            try
+            {
+                IPHostEntry IPHost = Dns.Resolve(Dns.GetHostName());
+                IPAddress[] addressList = IPHost.AddressList;
+                if (addressList.Length > 0)
+                {
+                    StringBuilder address = new StringBuilder();
+                    foreach (IPAddress a in addressList)
+                    {
+                        address.Append(a.ToString());
+                        address.Append(" ");
+                    }
+                    LblIP.Text= address.ToString();
+                }
+                else
+                    LblIP.Text = "Not Found";
+            }
+            catch (Exception)
+            {
+                LblIP.Text = "Not Found";
+            }
+        }
+
+        public bool CheckInternetConnection()
+        {
+            string url = "http://www.google.com";
+            try
+            {
+                System.Net.WebRequest myRequest = System.Net.WebRequest.Create(url);
+                System.Net.WebResponse myResponse = myRequest.GetResponse();
+
+            }
+            catch (System.Net.WebException)
+            {
+                return false;
+            }
+
+            return true;
+        }
+
+//////////////Login button clicked//////////////////////
+        private void button1_Click(object sender, EventArgs e)
+        {
+
+            try
+            {
+                DAL d = new DAL();
+                List<User> userlist = new List<User>();
+                userlist = d.CheckDbConnection();
+                if (userlist != null && userlist.Count>0)
+                {
+                    if (userlist.Select(x => x.USERID == textBox1.Text.Trim()).FirstOrDefault() != null)
+                    {
+                        if (userlist.Select(x => x.PASSWORD == textBox2.Text.Trim()).FirstOrDefault() != null)
+                        {
+                            List<UserRights> URData = new List<UserRights>();
+                            if (CheckInternetConnection())
+                            {
+                        
+                                URData = d.GetUserRights(textBox1.Text.Trim());
+                            }
+                            else
+                            {
+                                URData = d.GetUserRightsDataFromCSV();
+
+                            }
+                          
+                            MainForm mf = new MainForm();
+
+                            mf.userrightdata = URData;
+                            mf.ShowDialog();
+                        }
+                        else
+                        {
+                            MessageBox.Show("Wrong Password");
+                        }
+
+                    }
+                    else
+                    {
+                        MessageBox.Show("Wrong UserName");
+                    }
+                }
+                else
+                {
+                    MessageBox.Show("Connection Error!");
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Error! " + ex.Message);
+            }
+        }
+    }
+}

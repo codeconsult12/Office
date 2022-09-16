@@ -1,0 +1,61 @@
+C:\Users\datalog_server\Documents\Visual Studio 2008\Projects\SmartDeviceProject1\SmartDeviceProject1\bin\Debug\SmartDeviceProject1.exe
+C:\Users\datalog_server\Documents\Visual Studio 2008\Projects\SmartDeviceProject1\SmartDeviceProject1\bin\Debug\SmartDeviceProject1.pdb
+C:\Users\datalog_server\Documents\Visual Studio 2008\Projects\SmartDeviceProject1\SmartDeviceProject1\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\datalog_server\Documents\Visual Studio 2008\Projects\SmartDeviceProject1\SmartDeviceProject1\obj\Debug\SmartDeviceProject1.Properties.Resources.resources
+C:\Users\datalog_server\Documents\Visual Studio 2008\Projects\SmartDeviceProject1\SmartDeviceProject1\obj\Debug\SmartDeviceProject1.csproj.GenerateResource.Cache
+C:\Users\datalog_server\Documents\Visual Studio 2008\Projects\SmartDeviceProject1\SmartDeviceProject1\obj\Debug\SmartDeviceProject1.exe
+C:\Users\datalog_server\Documents\Visual Studio 2008\Projects\SmartDeviceProject1\SmartDeviceProject1\obj\Debug\SmartDeviceProject1.pdb
+C:\Users\datalog_server\Documents\Visual Studio 2008\Projects\SmartDeviceProject1\SmartDeviceProject1\obj\Debug\SmartDeviceProject1.Login.resources
+C:\Users\datalog_server\Documents\Visual Studio 2008\Projects\SmartDeviceProject1\SmartDeviceProject1\obj\Debug\SmartDeviceProject1.MainForm.resources
+C:\Users\datalog_server\Documents\Visual Studio 2008\Projects\SmartDeviceProject1\SmartDeviceProject1\obj\Debug\SmartDeviceProject1.PriceChecker.resources
+C:\Users\datalog_server\Documents\Visual Studio 2008\Projects\SmartDeviceProject1\SmartDeviceProject1\bin\Debug\System.Data.SqlServerCe.dll
+F:\SmartDeviceProject1\SmartDeviceProject1\bin\Debug\SmartDeviceProject1.exe
+F:\SmartDeviceProject1\SmartDeviceProject1\bin\Debug\SmartDeviceProject1.pdb
+F:\SmartDeviceProject1\SmartDeviceProject1\bin\Debug\System.Data.SqlClient.dll
+F:\SmartDeviceProject1\SmartDeviceProject1\bin\Debug\System.Data.SqlServerCe.dll
+F:\SmartDeviceProject1\SmartDeviceProject1\obj\Debug\ResolveAssemblyReference.cache
+F:\SmartDeviceProject1\SmartDeviceProject1\obj\Debug\SmartDeviceProject1.Login.resources
+F:\SmartDeviceProject1\SmartDeviceProject1\obj\Debug\SmartDeviceProject1.MainForm.resources
+F:\SmartDeviceProject1\SmartDeviceProject1\obj\Debug\SmartDeviceProject1.PriceChecker.resources
+F:\SmartDeviceProject1\SmartDeviceProject1\obj\Debug\SmartDeviceProject1.Properties.Resources.resources
+F:\SmartDeviceProject1\SmartDeviceProject1\obj\Debug\SmartDeviceProject1.csproj.GenerateResource.Cache
+F:\SmartDeviceProject1\SmartDeviceProject1\obj\Debug\SmartDeviceProject1.exe
+F:\SmartDeviceProject1\SmartDeviceProject1\obj\Debug\SmartDeviceProject1.pdb
+C:\Documents and Settings\Administrator\Desktop\SmartDeviceProject1\bin\Debug\SmartDeviceProject1.exe
+C:\Documents and Settings\Administrator\Desktop\SmartDeviceProject1\bin\Debug\SmartDeviceProject1.pdb
+C:\Documents and Settings\Administrator\Desktop\SmartDeviceProject1\bin\Debug\System.Data.SqlClient.dll
+C:\Documents and Settings\Administrator\Desktop\SmartDeviceProject1\bin\Debug\System.Data.SqlServerCe.dll
+C:\Documents and Settings\Administrator\Desktop\SmartDeviceProject1\obj\Debug\ResolveAssemblyReference.cache
+C:\Documents and Settings\Administrator\Desktop\SmartDeviceProject1\obj\Debug\SmartDeviceProject1.Login.resources
+C:\Documents and Settings\Administrator\Desktop\SmartDeviceProject1\obj\Debug\SmartDeviceProject1.MainForm.resources
+C:\Documents and Settings\Administrator\Desktop\SmartDeviceProject1\obj\Debug\SmartDeviceProject1.PriceChecker.resources
+C:\Documents and Settings\Administrator\Desktop\SmartDeviceProject1\obj\Debug\SmartDeviceProject1.Properties.Resources.resources
+C:\Documents and Settings\Administrator\Desktop\SmartDeviceProject1\obj\Debug\SmartDeviceProject1.csproj.GenerateResource.Cache
+C:\Documents and Settings\Administrator\Desktop\SmartDeviceProject1\obj\Debug\SmartDeviceProject1.exe
+C:\Documents and Settings\Administrator\Desktop\SmartDeviceProject1\obj\Debug\SmartDeviceProject1.pdb
+Z:\Project\PDTDeviceApp\SmartDeviceProject1\bin\Debug\SmartDeviceProject1.exe
+Z:\Project\PDTDeviceApp\SmartDeviceProject1\bin\Debug\SmartDeviceProject1.pdb
+Z:\Project\PDTDeviceApp\SmartDeviceProject1\bin\Debug\System.Data.SqlClient.dll
+Z:\Project\PDTDeviceApp\SmartDeviceProject1\bin\Debug\System.Data.SqlServerCe.dll
+Z:\Project\PDTDeviceApp\SmartDeviceProject1\obj\Debug\ResolveAssemblyReference.cache
+Z:\Project\PDTDeviceApp\SmartDeviceProject1\obj\Debug\SmartDeviceProject1.Login.resources
+Z:\Project\PDTDeviceApp\SmartDeviceProject1\obj\Debug\SmartDeviceProject1.MainForm.resources
+Z:\Project\PDTDeviceApp\SmartDeviceProject1\obj\Debug\SmartDeviceProject1.PriceChecker.resources
+Z:\Project\PDTDeviceApp\SmartDeviceProject1\obj\Debug\SmartDeviceProject1.Properties.Resources.resources
+Z:\Project\PDTDeviceApp\SmartDeviceProject1\obj\Debug\SmartDeviceProject1.csproj.GenerateResource.Cache
+Z:\Project\PDTDeviceApp\SmartDeviceProject1\obj\Debug\SmartDeviceProject1.exe
+Z:\Project\PDTDeviceApp\SmartDeviceProject1\obj\Debug\SmartDeviceProject1.pdb
+Z:\Project\PDTDeviceApp\SmartDeviceProject1\obj\Debug\SmartDeviceProject1.DeviceManagement.resources
+Z:\Project\PDTDeviceApp\SmartDeviceProject1\obj\Debug\Interop.PRENGINECELib.dll
+Z:\Project\PDTDeviceApp\SmartDeviceProject1\obj\Debug\SmartDeviceProject1.csproj.ResolveComReference.cache
+Z:\Project\PDTDeviceApp\SmartDeviceProject1\bin\Debug\Ionic.Zip.CF.dll
+Z:\Project\PDTDeviceApp\SmartDeviceProject1\bin\Debug\OpenNETCF.dll
+Z:\Project\PDTDeviceApp\SmartDeviceProject1\bin\Debug\OpenNETCF.WindowsCE.dll
+Z:\Project\PDTDeviceApp\SmartDeviceProject1\bin\Debug\OpenNETCF.WindowsCE.Messaging.dll
+Z:\Project\PDTDeviceApp\SmartDeviceProject1\bin\Debug\PrinterCE.NetCF.dll
+Z:\Project\PDTDeviceApp\SmartDeviceProject1\bin\Debug\Resco.AdvancedComboBox.CF3.dll
+Z:\Project\PDTDeviceApp\SmartDeviceProject1\bin\Debug\Resco.AdvancedList.CF3.dll
+Z:\Project\PDTDeviceApp\SmartDeviceProject1\bin\Debug\Resco.AdvancedTree.CF3.dll
+Z:\Project\PDTDeviceApp\SmartDeviceProject1\bin\Debug\Resco.CommonControls.CF3.dll
+Z:\Project\PDTDeviceApp\SmartDeviceProject1\bin\Debug\Resco.Core.CF3.dll
+Z:\Project\PDTDeviceApp\SmartDeviceProject1\bin\Debug\Interop.PRENGINECELib.dll
